@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="8dp"
+              android:gravity="center_horizontal"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/f8f5f5"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_collection_1"
+            android:background="@drawable/layout_background"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            android:src="@drawable/ic_empty_product_found"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_collection_2"
+                android:background="@drawable/layout_background"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:minHeight="46dp"
+                android:minWidth="46dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_empty_product_found"/>
+
+            <ImageView
+                android:id="@+id/iv_collection_3"
+                android:background="@drawable/layout_background"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:minHeight="46dp"
+                android:minWidth="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_empty_product_found"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/collection_name"
+        android:layout_width="match_parent"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_height="wrap_content"
+        tools:text="@string/collection_name"/>
+
+    <TextView
+        android:id="@+id/collection_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        tools:text="@string/collection_size"/>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Linio Challenge Application</string>
+    <string name="collection_name">Collection Name</string>
+    <string name="collection_size">15</string>
+</resources>
