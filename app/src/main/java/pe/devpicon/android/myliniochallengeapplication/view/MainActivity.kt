@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity(), MainView {
         val gridLayoutManager = GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
         rvFavouriteProducts?.layoutManager = gridLayoutManager
         rvFavouriteProducts?.adapter = favouriteAdapter
+        rvFavouriteProducts?.setHasFixedSize(true)
 
         mainController.loadProducts()
 

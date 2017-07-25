@@ -63,7 +63,7 @@ class DataSource {
     private fun loadJSONFromAsset(): String? {
         var json: String? = null
         try {
-            val `is` = MyApp.jsonInputStream
+            val `is` = MyApp.instance.getAssest()
             val size = `is`.available()
             val buffer = ByteArray(size)
             `is`.read(buffer)

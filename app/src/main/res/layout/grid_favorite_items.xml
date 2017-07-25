@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
               android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools"
-android:gravity="center_horizontal"
     >
 
     <TextView
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:id="@+id/all_favourites_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:textColor="#212121"
-        android:lineSpacingExtra="3sp"
         android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        android:textStyle="bold"
         tools:text="Todos mis favoritos (16)"
         />
 
 
-<android.support.v7.widget.RecyclerView android:id="@+id/rv_favourite_products"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_favourite_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>
